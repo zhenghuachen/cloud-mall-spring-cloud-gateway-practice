@@ -33,15 +33,17 @@
 		<spring-cloud.version>Greenwich.SR5</spring-cloud.version>
 	</properties>
 	<dependencies>
+		<!-- 用于构建微服务网关的依赖项。它使得可以通过定义路由规则来进行请求转发、过滤、路由等操作，是构建微服务架构中的核心组件之一 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
 		</dependency>
-
+		<!-- Eureka 是 Netflix 提供的一种基于 REST 的服务发现组件，用于在微服务架构中实现服务注册和发现 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		<!--  Auth0公司提供的Java JWT（JSON Web Token）库。它是用于创建和解析JWT Token 的库，支持生成和验证JWT，用于在分布式系统中实现身份认证和授权 -->
 		<dependency>
 			<groupId>com.auth0</groupId>
 			<artifactId>java-jwt</artifactId>
